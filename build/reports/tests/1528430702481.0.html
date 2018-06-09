@@ -1,0 +1,131 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="6eFVOZfCCKimKkSI1UUA17QGd6rWtReprRK1yYOs">
+    <title>北京房信网络科技有限责任公司管理系统</title>
+    <link href="http://app-member.fx.com/css/classic.css?v=2.8.7.5" rel="stylesheet">
+    <link href="http://app-member.fx.com/plugins/animate/animate.css?v=2.8.7.5" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="erp-login-box">
+    <div class="erp-login classic">
+        <div class="erp-login-box">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="erp-login-box-top">
+                <a href="" class="erp-login-box-top-brand">
+                                            <span class="icon-total erp-login-box-top-brand-logo"></span>
+                                    </a>
+            </div>
+            <p class="erp-login-box-title">Welcome <span>back!</span></p>
+            <div class="erp-login-box-form">
+                <p class="text-center" style="color: red;margin-bottom: 25px;">
+                    
+                </p>
+                <form method="POST" action="http://app-member.fx.com/login?width=1920&amp;height=1080">
+                    <input name="_token" value="6eFVOZfCCKimKkSI1UUA17QGd6rWtReprRK1yYOs" type="hidden">
+                    <div class="form-group has-feedback">
+                        
+                        
+                        <input id="mobile" class="form-control" name="mobile" value="" placeholder="请输入手机号" type="text">
+                        <i class="form-control-feedback icon-total icon-username"></i>
+                                            </div>
+                    <div class="form-group has-feedback">
+                        
+                        
+                        <input id="password" class="form-control" name="password" placeholder="请输入密码" autocomplete="off" type="password">
+                        <i class="form-control-feedback icon-total icon-password"></i>
+                                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <button type="submit" class="btn btn-lg btn-block">登录</button>
+                    <p class="forgetword text-center"><a href="http://app-member.fx.com/password/reset">忘记密码？</a></p>
+                    
+
+                    
+                    <p class="login-copy text-center">北京房信网络科技有限责任公司 版权所有 <span class="copyfont">©</span>2016</p>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+
+<script type="application/javascript">
+    
+    //    $(document).snowfall('clear');
+    //    $(document).snowfall({
+    //
+    //        image: "/img/snow/ParticleSmoke.png",
+    //
+    //        flakeCount:100,
+    //
+    //        minSize: 5,
+    //
+    //        maxSize: 22
+    //
+    //    });
+
+    //元旦、新年灯笼摆动
+    $(document).ready(function () {
+      // 勿删 -- 开始
+      var attrAction = $('form').attr('action') + '?width=' + window.screen.width + '&height=' + window.screen.height;
+      $('form').attr('action', attrAction);
+      // 勿删 -- 结束
+
+      var i = 0
+      setInterval(function () {
+        if (i == 0) {
+          i = 1
+          $('.lantern1,.lantern4').removeClass('zhuan_left').addClass('zhuan_right')
+          $('.lantern2,.lantern3').addClass('zhuan_left').removeClass('zhuan_right')
+        } else {
+          i = 0
+          $('.lantern1,.lantern4').addClass('zhuan_left').removeClass('zhuan_right')
+          $('.lantern2,.lantern3').removeClass('zhuan_left').addClass('zhuan_right')
+        }
+      }, 1000)
+    })
+
+    //其他
+    //    (function (win) {
+    //        var doc       = win.document, clearPassword;
+    //        clearPassword = function () {
+    //            document.getElementById('mobile').value = "";
+    //            document.getElementById('mobile').focus();
+    //        };
+    //        if (!doc.addEventListener) return;
+    //        doc.addEventListener('DOMContentLoaded', clearPassword, false);
+    //    })(window);
+</script>
+
+</body></html>

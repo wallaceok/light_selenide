@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AntDemo" default="report" basedir=".">
+	<property name="target.report.dir" value="target/surefire-reports" />
+	
+	
+	<target name="report" description="generate report">
+		<mkdir dir="${target.report.dir}/html" />
+		<junitreport todir="${target.report.dir}">
+			<fileset dir="${target.report.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report todir="${target.report.dir}/html" />
+		</junitreport>
+	</target>
+</project>
